@@ -1,0 +1,17 @@
+- name: Setup Redis server
+  hosts:
+    - server_role_redis_server
+  become: true
+  gather_facts: yes # Collect facts only once for the entire play
+  remote_user: rocky
+  roles: 
+    - redis_server
+
+- name: Frontend Servers
+  hosts:
+    - server_role_frontend_server
+  become: true
+  gather_facts: yes # Collect facts only once for the entire play
+  remote_user: admin
+  roles: 
+    - frontend_server
