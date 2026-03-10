@@ -1,5 +1,5 @@
 # 4640-ansible-roles-lab
-Tom "So Rich" Noppanot "The Thai Royal Prince Sweet" Sripan
+Noppanat Sripan
 Nuree Na
 Monte Lee
 
